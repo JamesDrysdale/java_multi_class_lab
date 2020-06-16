@@ -34,5 +34,23 @@ public class BusTest {
         assertEquals(1, bus.passengersCount());
     }
 
+    @Test
+    public void canNotAddMorePassengersThanCapacity(){
+        bus.addPassenger(person);
+        bus.addPassenger(person);
+        bus.addPassenger(person);
+        bus.addPassenger(person);
+        bus.addPassenger(person);
+        bus.addPassenger(person);
+        assertEquals(5, bus.passengersCount());
+    }
 
+    @Test
+    public void caRemovePassenger(){
+        bus.addPassenger(person);
+        bus.addPassenger(person);
+        bus.addPassenger(person);
+        bus.removePassengerByIndex(2);
+        assertEquals(2, bus.passengersCount());
+    }
 }
