@@ -46,7 +46,7 @@ public class BusTest {
     }
 
     @Test
-    public void caRemovePassenger(){
+    public void canRemovePassenger(){
         bus.addPassenger(person);
         bus.addPassenger(person);
         bus.addPassenger(person);
